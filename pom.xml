@@ -11,7 +11,7 @@
     <properties>
         <github.url>scm:git:git@github.com:dockstore/swagger-java-sam-client.git</github.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dockstore-core.version>1.15.0-prealpha.1</dockstore-core.version>
+        <dockstore-core.version>1.17.0</dockstore-core.version>
         <maven-failsafe.version>2.21.0</maven-failsafe.version>
         <maven-surefire.version>2.21.0</maven-surefire.version>
         <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
@@ -232,7 +232,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>4.5.3.0</version>
+                    <version>4.9.3.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

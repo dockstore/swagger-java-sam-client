@@ -15,7 +15,7 @@ jobs:
             sudo make install   
       - uses: actions/checkout@v2
       # Step that does that actual cache save and restore
-      - uses: actions/cache@v1
+      - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -24,7 +24,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '17.0.4+8'
+          java-version: '21.0.2+13.0.LTS'
           distribution: 'adopt'
       - name: Build with mvn
         run: mvn -B -ntp clean install
